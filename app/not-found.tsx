@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
 import Image from "next/image";
 
@@ -17,13 +16,12 @@ const NotFound = () => {
       <div className="p-6 w-1/3 rounded-lg shadow-md text-center">
         <h1 className="text-3xl font-bold mb-4">Not Found</h1>
         <p className="text-destructive">Could Not Find requested page</p>
-        <Button
-          variant="outline"
+        <button
           className="mt-4 ml-2"
           onClick={() => (window.location.href = "/")}
         >
           Back to Home
-        </Button>
+        </button>
       </div>
     </div>
   );
